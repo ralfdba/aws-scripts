@@ -1,12 +1,12 @@
 import pymysql
 import json
 
-endpoint = "api.cluster-cpn85tfypxsq.us-east-1.rds.amazonaws.com"
+endpoint = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 ddbb = "trx"
 userdb = "admin"
-passdb = "**curso2022"
+passdb = "XXXXXXXXXXXXXXXXXXXXXXXXXX"
 
-conn = pymysql.connect(endpoint, user=userdb, passwd=passdb, db=ddbb)
+conn = pymysql.connect(host=endpoint, user=userdb, password=passdb, database=ddbb)
 
 def lambda_handler(event,handler):
     cursor = conn.cursor()
