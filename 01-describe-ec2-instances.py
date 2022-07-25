@@ -1,6 +1,4 @@
 """
-Utilizando AWS Api
-instalar en nuestro computador
 Python
 pip install boto3
 pip install awscli
