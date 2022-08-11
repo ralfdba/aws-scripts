@@ -1,7 +1,9 @@
 import pymysql
 import json
 import sys
-
+"""
+pip install -t .
+"""
 endpoint = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 ddbb = "trx"
 userdb = "admin"
@@ -14,7 +16,7 @@ except:
     sys.exit()
 
 def lambda_handler(event,handler):
-    cursor = conn.cursor()
+    cursor = connection.cursor()
     cursor.execute("select * from trx")
     rows = cursor.fetchall()
 
